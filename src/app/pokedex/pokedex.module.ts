@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PokedexPageRoutingModule } from './pokedex-routing.module';
 
 import { PokedexPage } from './pokedex.page';
+import {PipesModule} from "../pipes/pipes.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PokedexPageRoutingModule
+    PokedexPageRoutingModule,
+    PipesModule
   ],
   declarations: [PokedexPage]
 })
