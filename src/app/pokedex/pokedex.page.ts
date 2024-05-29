@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class PokedexPage implements OnInit {
 
   pokedex: any = [];
-  query: string;
+  query: string = '';
 
   /**
    *

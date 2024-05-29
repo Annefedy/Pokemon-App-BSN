@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { PokemonNamePipe } from "./pipes/pokemon-name.pipe";
 import { PipesModule } from "./pipes/pipes.module";
 
-
 @NgModule({
-  declarations: [AppComponent, PokemonNamePipe],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
-    PipesModule
+    PipesModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    HttpClient,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
