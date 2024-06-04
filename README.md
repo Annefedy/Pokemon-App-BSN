@@ -1,5 +1,21 @@
 # Pokémon App
 
+## Apresentação
+
+![Tela Principal](./resources/pokedex.png)
+![Tela de Capturar](./resources/Pokébola.png)
+![Tela de Favorita](./resources/favorites.png)
+
+## Para mais detalhes, veja os vídeos demonstrativos:
+
+
+
+
+
+
+https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/01e31ed1-3857-415c-8c0c-3955f5fcb364
+
+
 ## Descrição
 
 Este projeto é um aplicativo de listagem e detalhes de Pokémon usando Ionic e Angular. 
