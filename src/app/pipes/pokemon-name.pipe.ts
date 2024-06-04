@@ -1,3 +1,4 @@
+// src/app/pipes/pokemon-name.pipe.ts
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
@@ -6,12 +7,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PokemonNamePipe implements PipeTransform {
 
   transform(pokemon_entries: any, name: string) {
-
-    if (name == null || name == undefined || name == '')
+    if (!name) {
       return pokemon_entries;
+    }
 
-    return pokemon_entries.filter((item: any) => item.pokemon_species.name.indexOf(name) !== -1);
-
+    return pokemon_entries.filter((item: any) => item.pokemon_species.name.includes(name));
   }
-
 }

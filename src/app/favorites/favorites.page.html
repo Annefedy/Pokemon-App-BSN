@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let pokemon of favoriteService.favorites">
+    <div style="text-align: center">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{ pokemon }}.svg" height="250px" />
+    </div>
+    <ion-card-header>
+      <ion-card-title>{{ pokemon }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" (click)="removeFromFavorites(pokemon)">
+        Remover dos Favoritos
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

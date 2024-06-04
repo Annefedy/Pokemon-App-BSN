@@ -28,6 +28,14 @@
         </ion-item>
       </ion-list>
 
+
+      <div style="margin-top: 10px">
+        <ion-button slot="end" expand="block"  (click)="addToFavorites()" *ngIf="!isFavorite">
+          <ion-icon name="add-circle-outline"></ion-icon> &nbsp;
+          Adicionar aos Favoritos</ion-button>
+      </div>
+
+
       <div style="margin-top: 10px">
         <ion-button expand="block" (click)="capturar()">
           <ion-icon name="camera"></ion-icon> &nbsp;

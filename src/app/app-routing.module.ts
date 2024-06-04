@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'pokebola',
     loadChildren: () => import('./pokebola/pokebola.module').then( m => m.PokebolaPageModule)
   },
+  {
+    path: 'favorites',
+    loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
+  },
 
 ];
 
