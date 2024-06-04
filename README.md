@@ -31,30 +31,3 @@ Os serviços estão documentados com comentários JSDoc. Verifique o código par
 Para rodar os testes de unidade, use o comando:
 ```bash
 npm test
-
-## Apresentação
-
-## Tela Principal
-![pokedex](https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/111897a9-1903-49a2-a7f5-032845ed6976)
-
-## Tela de Detalhes
-
-![Pokémon](https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/79816eb0-c889-431e-bee0-9dbaa295a65d)
-
-## Tela de Capturar
-
-![Pokébola](https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/150a9987-7c21-4dc1-9826-42cfca667248)
-
-## Tela de Favorita
-
-![favorites](https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/069ac6f5-5943-42f0-8fee-0725c03e8d07)
-
-
-Para mais detalhes, veja os vídeos demonstrativos:
-
-
-
-
-https://github.com/Annefedy/Pokemon-App-BSN/assets/103973102/77e92d2a-ae94-4394-ac98-93dd9eec7b13
-
-
